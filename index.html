@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Multi-step form</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&family=Ubuntu:wght@400;500;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="stepsdiv">
+      <div class="div">
+        <div class="eachstep">
+          <span class="firstspan spancolors">1</span>
+          <div>
+            <p>STEP 1</p>
+            <p>YOUR INFO</p>
+          </div>
+      </div>
+      <div class="eachstep">
+        <span class="span2">2</span>
+          <div>
+            <p>STEP 2</p>
+            <p>SELECT PLAN</p>
+          </div>
+      </div>
+      <div class="eachstep">
+        <span class="span3">3</span>
+          <div>
+            <p>STEP 3</p>
+            <p>ADD-ONS</p>
+          </div>
+      </div>
+      <div class="eachstep">
+        <span class="span4">4</span>
+          <div>
+            <p>STEP 4</p>
+            <p>SUMMARY</p>
+          </div>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="workspace">
+      <h1>Personal info</h1>
+      <p class="littledesc">Please provide your name, email address, and phone number.</p>
+      <div class="inputdiv">
+        <form>
+          <fieldset>
+            <div>
+              <label for="">Name</label>
+              <input type="text" id="name" placeholder="e.g. Stephen King" required>
+            </div>
+            <div>
+              <label for="">Email Address</label>
+              <input type="email" id="email" placeholder="e.g. stephenking@lorem.com" required>
+            </div>
+            <div>
+              <label for="">Phone Number</label>
+              <input type="number" id="phone-number" placeholder="e.g. +1 234 567 890" required>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    
+
+    <div class="plandiv">
+      <h1>Select your plan</h1>
+      <p class="littledesc">You have the option of monthly or yearly billing.</p>
+      <div class="choose">
+        <div class="plans">
+          <img src="./assets/images/icon-arcade.svg" alt="">
+          <div>
+            <h3>Arcade</h3>
+            <p>$9/mo</p>
+          </div>
+        </div>
+        <div class="plans">
+          <img src="./assets/images/icon-advanced.svg" alt="">
+          <div>
+            <h3>Advanced</h3>
+            <p>$12/mo</p>
+          </div>
+        </div>
+        <div class="plans">
+          <img src="./assets/images/icon-pro.svg" alt="">
+          <div>
+            <h3>Pro</h3>
+            <p>$15/mo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="addonsdiv">
+      <h1>Pick add-ons</h1>
+      <p class="littledesc">Add-ons help enhance your gaming experience.</p>
+      <div class="choose">
+        <div class="ons">
+          <input class="onscheckbox" type="checkbox">
+          <div>
+            <h3>Online service</h3>
+            <p>Access to multiplayer games</p>
+          </div>
+          <p class="price">+$1/mo</p>
+        </div>
+        <div class="ons">
+          <input class="onscheckbox" type="checkbox">
+          <div>
+            <h3>Extra 1TB of cloud save</h3>
+            <p>$12/mo</p>
+          </div>
+          <p class="price">+$2/mo</p>
+        </div>
+        <div class="ons">
+          <input class="onscheckbox" type="checkbox">
+          <div>
+            <h3>Customizable Profile</h3>
+            <p>Custom theme on your profile</p>
+          </div>
+          <p class="price">+$2/mo</p>
+        </div>
+      </div>
+    </div>
+ 
+
+
+
+    <button type="button" class="submit" id="submit">Next Step</button>
+  </div>
+
+
+
+
+  
+
+
+  <!-- Finishing up
+  Double-check everything looks OK before confirming. -->
+
+  <!-- Dynamically add subscription and add-on selections here -->
+
+  <!-- Total (per month/year)
+
+  Go Back
+  Confirm -->
+
+  <!-- Thank you!
+
+  Thanks for confirming your subscription! We hope you have fun 
+  using our platform. If you ever need support, please feel free 
+  to email us at support@loremgaming.com. -->
+
+  
+  
+  <script src="./app.js"></script>
+</body>
+</html>

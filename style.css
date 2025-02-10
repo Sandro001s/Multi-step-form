@@ -1,0 +1,269 @@
+.ubuntu-regular,span {
+  font-family: "Ubuntu", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium,.eachstep {
+  font-family: "Ubuntu", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold,h1,label,.submitm,.plandiv        {
+  font-family: "Ubuntu", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+  
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(217, 100%, 97%);
+}
+
+.container{
+    background-color: white;
+    width: 1300px;
+    height: 700px;
+    border-radius: 25px;
+    padding: 19px;
+    position: relative;
+}
+
+.stepsdiv{
+    width: 330px;
+    background: url(./assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 660px;
+    border-radius: 25px;
+}
+
+.eachstep{
+    display: flex;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.div{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    width: 50px;
+    height: 50px;
+    background-color: initial;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 22px;
+    border: 1px solid white;
+    color: white;
+}
+
+.eachstep div{
+    margin-left: 20px;
+    color: white;
+
+}
+
+
+.eachstep div::first-line{
+    color: hsl(231, 11%, 63%);
+}
+
+.workspace{
+    right: 0;
+    top: 0;
+    width: 750px;
+    height: 620px;
+    position: absolute;
+    margin-top: 50px;
+
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: none;
+    font-size: 20px;
+    gap: 30px;
+}
+
+h1{
+    font-size: 45px;
+    color: hsl(213, 96%, 18%);
+}
+
+.littledesc{
+    color: hsl(231, 11%, 63%);
+    font-size: 20px;
+    margin: 10px 0px 40px;
+}
+
+input{
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.568);
+    padding: 20px;
+    font-size: 1.02rem;
+    pointer-events: auto;
+    z-index: 10;
+    outline: none;
+    margin-top: 10px;
+}
+
+label{
+    color: hsl(243, 100%, 62%);
+}
+
+.submit{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 253px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.error{
+    border: 2px solid red;
+}
+
+.error::placeholder{
+    color: red;
+}
+
+.firstspan{
+    background-color: white;
+    color: black;
+}
+
+.plandiv{
+    right: 0;
+    top: 0;
+    width: 750px;
+    height: 620px;
+    position: absolute;
+    margin-top: 50px;
+    display: none;
+}
+
+.addonsdiv{
+    right: 0;
+    top: 0;
+    width: 750px;
+    height: 620px;
+    position: absolute;
+    margin-top: 50px;
+    display: none;
+}
+
+.plans{
+    display: flex;
+    height: 100px;
+    width: 500px;
+    border: 1px solid rgba(128, 128, 128, 0.568);
+    border-radius: 15px;
+}
+
+.choose{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.plans img{
+    width: 60px;
+    margin-left: 30px;
+}
+
+.plans div{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 40px;
+    color: grey;
+}
+
+.plans div::first-line{
+    color: hsl(213, 96%, 18%);
+}
+
+.ons{
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.568);
+    width: 500px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.onscheckbox{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 3em;
+    width: 3em;
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 22px;
+}
+
+.onscheckbox:after{
+    font-family: "Font Awesome 6 Free";
+    content: "\2713";
+    font-weight: 900;
+    font-size: 2em;
+    color: white;
+    display: none;
+}
+
+.onscheckbox:checked{
+    background-color: hsl(248, 54%, 45%);
+}
+
+.onscheckbox:checked::after{
+    display: block;
+}
+
+.ons div{
+    margin: 20px ;
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
+
+.ons div p{
+    color: grey;
+}
+
+.price{
+    margin-left: 60px;
+    font-size: 1.2rem;
+    margin-top: 33px;
+    color: grey;
+}
