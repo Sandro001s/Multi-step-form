@@ -84,11 +84,11 @@ const onCheckboxes = document.querySelectorAll(".onscheckbox");
 onCheckboxes.forEach(checkbox => {
     checkbox.addEventListener("change", () => {
         if (checkbox.checked) {
-            checkbox.parentElement.style.backgroundColor = "#F5F5F5"; // Purple background
-            checkbox.parentElement.style.border = "2px solid #4635B1"; // Purple border
+            checkbox.parentElement.style.backgroundColor = "#F5F5F5";
+            checkbox.parentElement.style.border = "2px solid #4635B1";
         } else {
-            checkbox.parentElement.style.backgroundColor = "white"; // Reset background
-            checkbox.parentElement.style.border = "1px solid rgba(128, 128, 128, 0.568)"; // Reset border
+            checkbox.parentElement.style.backgroundColor = "white";
+            checkbox.parentElement.style.border = "1px solid rgba(128, 128, 128, 0.568)";
         }
     });
 });
